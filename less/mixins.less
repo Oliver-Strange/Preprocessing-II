@@ -1,1 +1,18 @@
 // Mixins in here
+
+.custom-btn(@width: 100px, @bg-color: grey, @tx-color){
+    display: flex;
+    justify-content: center;
+    border-radius: 20%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1.8rem;
+    width: @width;
+    background-color: @bg-color;
+    color: @tx-color;
+
+}
+
+.test() {
+    border: 1px solid black;
+}
