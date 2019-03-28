@@ -1,12 +1,23 @@
 .home {
-
   .header-nav {
     display: flex;
-    margin: 0 auto;
+    align-items: center;
     justify-content: space-between;
     padding: 20px 30px;
     border-bottom: 1px dashed @silver;
-    
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0 5%;
+        
+    }
+  }
+  .cta {
+    border-bottom: 1px dashed @silver;
+    .text-content {
+      margin-top: 20px;
+    }
   }
 
   .content-section {
@@ -15,20 +26,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 5%;
+      }
       img {
         border-radius: 10px;
       }
+    }
+
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin: 0 5%;
     }
   }
 
@@ -45,14 +72,25 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-
+    
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 20px 5%;
     }
   }
 
@@ -66,10 +104,21 @@
       width: 30%;
       margin-bottom: 30px;
       .btn {
-        .custom-btn( 80%, @eastern-blue, white);
+        .custom-btn(80%, @eastern-blue, white);
         background-color: darken(@eastern-blue, 10%);
-        
+      }
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 10px;
       }
     }
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-top: 20px 5%;
+    }
   }
-}// home
+} // home
